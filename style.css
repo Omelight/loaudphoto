@@ -170,3 +170,39 @@ footer {
 		font-size: 1.5em;
 	}
 }
+@media screen and (max-width: 580px) {
+	button {
+		display: none;
+	}
+	.panel.about {
+		grid-row: 2;
+		grid-template-columns: 1fr;
+		grid-template-rows: 3fr 1fr;
+		border-bottom: 1px solid #323230;
+	}
+	.panel img {
+		width: 100%;
+	}
+	.panel.photo {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 3fr;
+	}
+}
+@media screen and (max-width: 460px) {
+	nav li {
+		padding: 0;
+	}
+}
+@media screen and (max-width: 407px) {
+	header {
+		flex-direction: column;
+		height: 120px;
+	}
+	#logo {
+		padding-top: 5px;
+		height: 60px;
+	}
+	nav {
+		margin-top: 5;
+	}
+}
